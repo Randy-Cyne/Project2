@@ -6,7 +6,7 @@
 
 body {
   font-family: "Hanken Grotesk";
-  color: hsl(0, 0%, 100%, 0.7);
+  color: hsla(0, 0%, 100%, 0.7);
   width: 100vw;
   height: 100vh;
   font-size: 20px;
@@ -67,13 +67,28 @@ body {
 }
 
 .black-text {
-  color: #0d0d0d;
+  padding-right: 0.2em;
+  color: #222222;
   font-weight: 600;
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  position: relative;
   padding: 0.7em;
   border-radius: 0.4em;
+}
+
+.fraction {
+  position: absolute;
+  right: 0;
+  padding-right: 2em;
+}
+
+.text-3 {
+  font-weight: 600;
+  color: rgb(153, 152, 152);
 }
 
 .reaction {
@@ -94,6 +109,7 @@ body {
   width: 1.5em;
   height: 1.5em;
   background: url("icons/icon-reaction.svg");
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -114,6 +130,7 @@ body {
   width: 1.5em;
   height: 1.5em;
   background: url("icons/icon-memory.svg");
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -160,10 +177,12 @@ body {
 }
 
 button {
-  font-weight: 600;
+  font-size: large;
+  letter-spacing: 0.1em;
+  font-weight: 500;
   color: hsl(0, 0%, 100%);
   background-color: hsl(224, 30%, 27%);
-  padding: 1em;
+  padding: 1.2em;
   border: none;
   border-radius: 2em;
 }
